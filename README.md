@@ -6,14 +6,14 @@ A aplicação realiza a coleta de dados diretamente do site do IBGE e os fornece
 
 ---
 
-## 🚀 Sobre o Projeto
+## Sobre o Projeto
 
 O **DadosIBGE-API** foi desenvolvido com foco em praticar e aplicar conceitos de desenvolvimento backend, APIs REST e containerização com Docker.  
 O projeto demonstra como construir uma API moderna utilizando FastAPI, capaz de integrar-se com fontes de dados externas por meio de scraping automatizado.
 
 ---
 
-## 🧩 Funcionalidades
+## Funcionalidades
 
 - Listagem de todos os estados do Brasil.  
 - Consulta de municípios por sigla do estado.  
@@ -22,64 +22,77 @@ O projeto demonstra como construir uma API moderna utilizando FastAPI, capaz de 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Python 3.11**
 - **FastAPI**
 - **Requests**
 - **BeautifulSoup4** (para scraping)
 - **Docker e Docker Compose**
-- **Uvicorn** (servidor ASGI)
+- **Uvicorn**
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 
 ### 1. Clonar o repositório
-```bash
+```
 git clone https://github.com/SEU-USUARIO/DadosIBGE-API.git
 cd DadosIBGE-API
+```
 
-2. Subir os containers com Docker
-bash
+### 2. Subir os containers com Docker
+
 Copiar código
+```
 docker-compose up --build
+```
 
-3. Acessar a API
+### 3. Acessar a API
 Após a inicialização, acesse no navegador ou no terminal:
 
 http://localhost:8001
 
-4.Documentação automática
+### 4.Documentação automática
 
 Acesse a documentação interativa gerada pelo FastAPI:
 
 http://localhost:8001/docs
 
 
-📁 Estrutura do Projeto
-
+## Estrutura do Projeto
+```
 DadosIBGE-API/
 │
-├── app/
-│   ├── main.py              # Arquivo principal da aplicação FastAPI
-│   ├── scraping.py          # Módulo responsável pela coleta dos dados do IBGE
-│   ├── requirements.txt     # Dependências do projeto
+├── app/  
+│   ├── main.py              # Arquivo principal da aplicação FastAPI  
+│   ├── scraping.py          # Módulo responsável pela coleta dos dados do   IBGE
+│   ├── requirements.txt     # Dependências do projeto  
 │
-├── Dockerfile               # Configuração da imagem Docker
-├── docker-compose.yml       # Orquestração dos containers
-
+├── Dockerfile               # Configuração da imagem Docker  
+├── docker-compose.yml       # Orquestração dos containers  
+```
 
 ---
 
-## 🚀 Execução Rápida
+## Execução Rápida
 
-Este projeto pode ser executado com apenas um comando, graças ao uso do Docker e do Docker Compose:
+Este projeto pode ser executado com apenas um comando, pelo uso do Docker e do Docker Compose:
 
-```bash
+```
 docker-compose up --build
+```
 
+Após a inicialização, a API estará disponível em:
+
+```
 http://localhost:8001
+```
 
+E a documentação interativa do FastAPI poderá ser acessada em:
 
+```
 http://localhost:8001/docs
+```
+
+

@@ -9,7 +9,7 @@ app = FastAPI(
 
 @app.get("/")
 def raiz():
-    return {"mensagem": "Bem-vindo à API IBGE! 🚀 Acesse /estados ou /municipios/{sigla}"}
+    return {"mensagem": "Bem-vindo à API IBGE!  Acesse /estados ou /municipios/{sigla}"}
 
 @app.get("/estados")
 def listar_estados():
